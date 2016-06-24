@@ -63,7 +63,7 @@ local function do_keyboard_channel()
     		{text = 'Join ! �', url = 'https://telegram.me/sudo_tm'},
 	    },
 	{
-	        		{text = 'Join ! �, url = 'https://telegram.me/sudo_tm'},
+	        		{text = 'Join ! 🇬🇧', url = 'https://telegram.me/sudo_tm'},
     },
 		{
 					{text = 'Join 🗣', url = 'https://telegram.me/Sudo_Tm'},
