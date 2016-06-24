@@ -51,7 +51,7 @@ local function do_keyboard_startme()
     local keyboard = {}
     keyboard.inline_keyboard = {
     	{
-    		{text = '🙃👉 Click here ! 👈🙃', url = 'https://telegram.me/'..bot.username}
+    		{text = '🙃�اینجا بزن !�🙃', url = 'https://telegram.me/'..bot.username}
 	    }
     }
     return keyboard
@@ -87,7 +87,7 @@ local action = function(msg, blocks, ln)
             api.sendKeyboard(msg.from.id, message, keyboard, true)
             end
 			if msg.chat.type == 'group' or msg.chat.type == 'supergroup' then
-          api.sendKeyboard(msg.chat.id, 'Hey 👋 Please `start` me in *PV* 🖐😄👇' ,do_keyboard_startme(), true)
+          api.sendKeyboard(msg.chat.id, '_سلام !_👋برای چت منو استارت کن 😀�',do_keyboard_startme(), true)
         end
         return
     end
