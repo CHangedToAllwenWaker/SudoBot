@@ -6,7 +6,7 @@ local function do_keyboard_private()
 	        {text = '�  Chat 📤', callback_data = '/chat'},
                 },
         }
-    }
+    },
     return keyboard
 end
 
