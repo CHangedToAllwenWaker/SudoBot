@@ -35,7 +35,7 @@ local function do_keyboard_private()
     		{text = '📡 Channels', callback_data = '!channel'},
 	    },
 		{
-	        {text = '📥 Contact Us 📤', callback_data = '/chat'},
+	        {text = '📥 Contact Us 📤', callback_data = '/start'},
         },
 		{
 	        {text = 'About Us 👥', callback_data = '!aboutus'},
@@ -76,7 +76,7 @@ local function do_keyboard_channel()
     return keyboard
 end
 local action = function(msg, blocks, ln)
-    if blocks[1] == 'start' or blocks[1] == 'help' then
+    if blocks[1] == 'starts' or blocks[1] == 'helps' then
         db:hset('bot:users', msg.from.id, 'xx')
         db:hincrby('bot:general', 'users', 1)
         if msg.chat.type == 'private' then
