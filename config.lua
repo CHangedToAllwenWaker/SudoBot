@@ -1,5 +1,5 @@
 return {
-	bot_api_key = '139110802',
+	bot_api_key = '232223767:AAE2N5C9yNdAvdEIUMl1SnrmG0Y0qO6CmKQ',
 	admin = 207418094,186514905,131020409,
 	channel = '@Sudo_Tm', --channel username with the '@'
 
