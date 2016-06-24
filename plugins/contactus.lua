@@ -25,7 +25,7 @@ if chat_info == 'block' or chat_info == 'false' then
 return nil 
 else
  db:hset(hash, user_id, 'false')
-api.sendMessage(msg.chat.id, '*- Chat ended* \n/start `Return to home`', true) 
+api.sendMessage(msg.chat.id, '*- Chat ended* \n/start `Chat Again`', true) 
 end
 end
 if msg.chat.type == 'private' and chat_info == 'true' then
@@ -71,7 +71,7 @@ end
    msg = msg.reply_to_message
     local receiver = msg.forward_from.id
     local input = blocks[1]
-      api.sendMessage(receiver, '- Reply : \n\n'..input, false)
+      api.sendMessage(receiver, '- Reply Message From Sudo Team : \n\n'..input, false)
 end
 end
 return {
